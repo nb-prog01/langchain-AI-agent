@@ -1,0 +1,28 @@
+----------Research Output----------
+Timestamp: 2025-10-05 02:25:01
+{
+  "topic": "Plushie",
+  "summary": "A plushie, also known as a stuffed toy or stuffed animal, is a toy made from fabric and stuffed with materials like cotton, synthetic fibers, or beans. They come in various shapes, often resembling animals, fictional characters, or everyday objects. Plushies are popular as children's toys and collectibles, and they can also serve as comfort objects or decorative items.",
+  "sources": [
+    "Wikipedia"
+  ],
+  "tools_used": [
+    "wikipedia",
+    "save_to_txt_file"
+  ]
+}
+-------------------------------
+----------Research Output----------
+Timestamp: 2025-10-05 02:31:07
+{
+  "topic": "Plushie",
+  "summary": "A plushie, also known as a stuffed toy or stuffed animal, is a toy made from fabric, typically stuffed with material like cotton, synthetic fibers, or beans. They come in various shapes and sizes, often resembling animals, fictional characters, or other objects. Plushies are popular as children's toys, collectibles, and decorative items.",
+  "sources": [
+    "Wikipedia"
+  ],
+  "tools_used": [
+    "wikipedia",
+    "save_to_txt_file"
+  ]
+}
+-------------------------------
