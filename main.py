@@ -21,7 +21,9 @@ class ResearchResponse(BaseModel):
     tools_used:list[str]
 
 
-# NOTE: As of now, Gemini (Google Generative AI) does NOT support tool/function calling.
+# [IMPORTANT NOTE]: As of now, Gemini (Google Generative AI) does NOT support tool/function calling.
+# Therefore, it only returns tool call intents in the output metadata, not actual executions.
+# Based on which we call tools externally in this code.
 # Only OpenAI and Anthropic models support function-based tool calling in LangChain.
 # If you want to use tools, use ChatOpenAI or ChatAnthropic as your LLM.
 
