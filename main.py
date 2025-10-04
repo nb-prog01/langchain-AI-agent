@@ -20,11 +20,14 @@ class ResearchResponse(BaseModel):
     sources:list[str]
     tools_used:list[str]
 
-llm=ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite", verbose=True)
-# response=llm.invoke("what is meaning of life?")
-# print(response)
 
-# llm=ChatAnthropic(model="claude-sonnet-4-5-20250929")
+# NOTE: As of now, Gemini (Google Generative AI) does NOT support tool/function calling.
+# Only OpenAI and Anthropic models support function-based tool calling in LangChain.
+# If you want to use tools, use ChatOpenAI or ChatAnthropic as your LLM.
+
+# llm=ChatAnthropic(model="claude-sonnet-4-5-20250929", verbose=True)
+
+llm=ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite", verbose=True)
 
 parser=PydanticOutputParser(pydantic_object=ResearchResponse)
 
