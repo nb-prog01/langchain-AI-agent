@@ -26,3 +26,42 @@ Timestamp: 2025-10-05 02:31:07
   ]
 }
 -------------------------------
+----------Research Output----------
+Timestamp: 2025-10-05 20:58:13
+{
+  "topic": "Quasars",
+  "summary": "Quasars, or quasi-stellar objects, are extremely luminous objects found in the centers of some galaxies. They are among the brightest objects in the universe, emitting vast amounts of energy across the electromagnetic spectrum. This energy is produced by supermassive black holes that are actively consuming surrounding gas and dust. As material falls into the black hole, it forms an accretion disk, which heats up and releases enormous amounts of energy. Quasars are typically located billions of light-years away, making them valuable tools for studying the early universe and the evolution of galaxies.",
+  "sources": [
+    "Wikipedia"
+  ],
+  "tools_used": [
+    "wikipedia",
+    "save_to_txt_file"
+  ]
+}
+-------------------------------
+----------Research Output----------
+Timestamp: 2025-10-05 22:25:19
+{
+  "topic": "Pineapple vs. Custard Apple",
+  "summary": "Pineapples and custard apples are distinct fruits with several key differences:\n\n*   **Appearance:** Pineapples have a rough, spiky exterior with a cylindrical shape, while custard apples have a lumpy, green or reddish skin.\n*   **Taste and Texture:** Pineapples have a sweet and tangy flavor with a fibrous texture. Custard apples have a sweet, creamy taste and a custard-like texture, with large, black seeds.\n*   **Origin:** Pineapples are native to South America, while custard apples are believed to have originated in the West Indies and Central America.\n*   **Botanical Family:** Pineapples belong to the Bromeliaceae family, while custard apples belong to the Annonaceae family.\n\nIn essence, they are different fruits with distinct appearances, tastes, textures, and origins.",
+  "sources": [],
+  "tools_used": [
+    "save_to_txt_file"
+  ]
+}
+-------------------------------
+----------Research Output----------
+Timestamp: 2025-10-05 22:50:36
+{
+  "topic": "Species of Banana",
+  "summary": "There are numerous species of bananas, but the most common ones belong to the genus Musa. Within this genus, there are many different species and cultivars. Some examples include Musa acuminata, Musa balbisiana (which are the two main ancestors of most cultivated bananas), and various hybrids and cultivars like Cavendish (the most widely exported banana), Gros Michel, and Lady Finger.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Banana",
+    "https://www.britannica.com/plant/banana-plant"
+  ],
+  "tools_used": [
+    "save_to_txt_file"
+  ]
+}
+-------------------------------
