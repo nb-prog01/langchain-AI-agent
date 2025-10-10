@@ -59,12 +59,7 @@ dmypy.json
 
 # Environments
 .env.local
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+
 
 # MacOS
 .DS_Store
@@ -79,9 +74,6 @@ Desktop.ini
 
 # Logs
 *.log
-
-# dotenv
-*.env
 
 # PyCharm
 .idea/
