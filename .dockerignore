@@ -1,0 +1,9 @@
+__pychache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.ipynb
+.env.local
+.venv/

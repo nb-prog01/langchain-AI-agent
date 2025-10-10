@@ -12,8 +12,8 @@ from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain.globals import set_debug
 from tools import search_tool, wiki_tool, save_tool, save_to_txt
 
-# load_dotenv(dotenv_path=".env")
-load_dotenv(dotenv_path=".env.local")
+load_dotenv()
+# load_dotenv(dotenv_path=".env.local")
 
 class ResearchResponse(BaseModel):
     topic:str
@@ -94,6 +94,8 @@ while True:
         print("Bot: ", response_dict.get("summary"))
 
     #----Pseudo tool calling for Gemini model (since it doesn't support tool calling natively)----
+    # Comment out below from #start to #end in case of OpenAI or Anthropic models
+    # because they support tool calling natively and return final output directly.
     #start
     try:
         output_text = raw_response.get("output", "")
@@ -127,51 +129,3 @@ while True:
         # end
     except Exception as e:
         print("Error in pseudo tool calling:", e)
-
-
-# Comment out below from #start to #end in case of OpenAI or Anthropic models
-# because they support tool calling natively and return final output directly.
-# # start
-# output_text = raw_response.get("output", "")
-
-# # Extract JSON block (inside ```json ... ```)
-# json_pattern = r"```json\s*(.*?)\s*```"
-# match = re.search(json_pattern, output_text, re.DOTALL)
-
-# if not match:
-#     parsed={}
-#     print("No JSON block found.")
-# else:
-#     json_str = match.group(1).strip()
-
-#     try:
-#         parsed = json.loads(json_str)
-#         print("\nParsed JSON:")
-#         print(json.dumps(parsed, indent=2))
-
-#         # Check for explicit save intent
-#         should_save = False
-
-#         if "tools_used" in parsed and any("save" in t.lower() for t in parsed["tools_used"]):
-#             should_save = True
-
-#         # Save if needed
-#         if should_save:
-#             print("\n Saving response using save_to_txt()...")
-#             result = save_to_txt(json.dumps(parsed, indent=2))
-#             print(result)
-#         else:
-#             print("\n No save tool requested — skipping file write.")
-
-#     except json.JSONDecodeError as e:
-#         print("JSON parse error:", e)
-# # end
-
-try:
-    raw_string=parser.parse(raw_response.get("output"))
-    structured_response=raw_string.model_dump().get("summary")
-    print(type(structured_response))
-    print(structured_response)
-except Exception as e:
-    print("Error parsing response:", e)
-    print("Raw response:", raw_response)
